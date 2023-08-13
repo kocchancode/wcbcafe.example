@@ -43,6 +43,13 @@ header{
     display: flex;
     justify-content: space-between;
 }
+/* 
+    (梶屋)このdisplay flexが原因ですね〜！
+    全てのheaderタグがcssの対象になっているので、
+    ページ上部のheaderと、articleタグ内のheaderの両方に効いてます！
+    実際はページ上部のheaderだけに必要だと思うので、
+    そっちはpage-header等クラス名をつけて、そっちだけ効くようにするとかどうでしょう
+ */
 .wrapper{
     max-width: 1100px;
     margin:0 auto;
@@ -153,6 +160,13 @@ article{
    position: absolute;
    margin-left: 124px; 
 }*/
+/* 
+    (梶屋)でも自分で解決できたのはすごく良いことですし、
+    結局見た目がOKであれば問題ないと思いますよ！
+    CSSっていろんな実装方法があるので、
+    ある程度見やすく(保守性が高く)なっていれば、
+    それでOKだと思います！
+ */
 .post-title,
 .post-cat{
     margin-left: 120px;
